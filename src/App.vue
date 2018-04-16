@@ -1,21 +1,17 @@
 <template>
   <div id="app">
-    <headTop></headTop>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-  import headTop from "./components/header/header.vue"
 export default {
-  name: 'App',
-  components:{
-    headTop
-  }
+  name: 'App'
 }
 </script>
 
 <style>
+  @import "style/common.css";
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

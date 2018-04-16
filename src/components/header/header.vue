@@ -1,6 +1,16 @@
 <template>
     <div id="head-top">
-        {{msg}}
+      <div class="wrap">
+        <div class="left">
+          <slot name="logo"></slot>
+        </div>
+        <div class="middle">
+          <slot name="title"></slot>
+        </div>
+        <div class="right">
+          <slot name="loginUser" ></slot>
+        </div>
+      </div>
     </div>
 </template>
 
@@ -8,20 +18,41 @@
     export default {
       data(){
         return {
-           msg:'我是一直猪'
+          logo:'ele.me',
+          rightmsg:'登录/注册'
         }
       }
     }
 </script>
 
-<style>
+<style scoped>
   #head-top {
-    background-color: dodgerblue;
+    background-color: #3190e8;
     position: fixed;
     left: 0;
     top:0;
     width: 100%;
-    height: 1.95rem;
+    height: 100px;
     color:#FFF;
+    line-height: 100px;
+  }
+  .wrap {
+    padding:0 30px;
+    display: flex;
+  }
+  .left {
+    flex:1;
+    text-align: left;
+    font-size: 40px;
+  }
+  .middle {
+    flex:1;
+    text-align: center;
+    font-size: 35px;
+  }
+  .right {
+    flex:1;
+    text-align: right;
+    font-size: 35px;
   }
 </style>
