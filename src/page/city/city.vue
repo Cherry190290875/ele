@@ -86,12 +86,11 @@
   }
   input {
     display: block;
-    width: 94%;
+    width: 99%;
     height:60px;
     padding:0 3%;
     line-height: 60px;
-    border:1px solid #333;
-    border-radius: 5px;
+    border:1px solid #c1c1c1;
   }
   *:focus {
     outline: none;
@@ -135,7 +134,7 @@
     border-bottom: 1px solid #DDD;
   }
   .text {
-    font-size: 38px;
+    font-size: 30px;
     line-height: 80px;
     text-align: center;
   }
@@ -152,12 +151,13 @@
     padding-left:30px;
   }
   .siteName {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 50px;
   }
   .site {
-    font-size: 30px;
+    font-size: 26px;
     line-height: 40px;
     margin-top: 20px;
+    color:#a09f9f;
   }
 </style>

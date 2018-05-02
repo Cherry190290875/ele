@@ -35,6 +35,7 @@
     height: 100px;
     color:#FFF;
     line-height: 100px;
+    z-index: 10;
   }
   .wrap {
     padding:0 30px;
@@ -48,11 +49,14 @@
   .middle {
     flex:1;
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   .right {
     flex:1;
     text-align: right;
-    font-size: 35px;
+    font-size: 30px;
   }
 </style>
